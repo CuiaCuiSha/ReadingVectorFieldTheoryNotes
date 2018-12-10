@@ -365,8 +365,8 @@
 \begin{center}
 \color{main}
 \rule{0.8\textwidth}{2pt}\\
-\Huge {\color{seco} \bfseries \the\entitle } {\color{main} \bfseries Note}\\
-{\Huge \CJKfamily{new}{\color{seco} \the\zhtitle } 笔记}\\
+\Huge {\color{seco} \bfseries \the\entitle } {\color{main} \bfseries Notes}\\
+{\Huge \CJKfamily{new}{\color{seco} \the\zhtitle } 记}\\
 \rule{0.8\textwidth}{2pt}
 \end{center}
 \vskip3ex
