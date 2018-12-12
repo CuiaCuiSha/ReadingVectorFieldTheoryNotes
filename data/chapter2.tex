@@ -1,2 +1,52 @@
-\chapter{矢量及矢量分析}
-对应书中的第一二章节
+\chapter{矢量}
+\section{title}
+
+凡是与三个独立因素有关的物理量均可以采用三维矢量表示。由此物理楼可以分为标量，矢量，二阶张量等。
+在三维空间中，一个二阶张量则有9个分量，可以表示为一个有序9元数组或3×3阶的矩阵
+\section{矢量与矩阵}
+
+
+矢量
+\[\overrightarrow{A}=A_x\widehat{i}+A_y\widehat{j}+A_z\widehat{k}\]
+
+对应矩阵
+
+\[A=\left[ \begin{array}{c}
+A_x\\
+A_y\\
+A_z\\
+\end{array} \right] \]
+
+\section{矢量混合积}
+表征平行六面体有向体积
+\[
+\vec{A}\cdot \left( \vec{B}\times \vec{C} \right) =\vec{B}\cdot \left( \vec{C}\times \vec{A} \right) =\vec{C}
+\]
+
+\begin{newdef}[]
+	三个非零矢量混合积为0的充要条件是$\vec{A},\vec{B},\vec{C}$三个矢量共面，对应有向体积为0。
+\end{newdef}
+
+
+
+
+\section{矢量二重叉积}	
+\[
+\vec{A}\times \left( \vec{B}\times \vec{C} \right) =\vec{B}\left( \vec{A}\cdot \vec{C} \right) -\vec{C}\left( \vec{A}\cdot \vec{B} \right) 
+\]
+\begin{newdef}[]
+	三个非零矢量混合积为0的充要条件是$\vec{A},\vec{B},\vec{C}$三个矢量共面，对应有向体积为0。
+\end{newdef}
+
+
+
+\section{Laplace公式}
+\[
+\left( \vec{A}\times \vec{B} \right) \cdot \left( \vec{C}\times \vec{D} \right) =\left( \vec{A}\cdot \vec{C} \right) \left( \vec{B}\cdot \vec{D} \right) -\left( \vec{A}\cdot \vec{D} \right) \left( \vec{B}\cdot \vec{C} \right) 
+\]
+\section{Lagrange公式}
+\[
+\left| \vec{A}\times \vec{B} \right|^2+\left| \vec{A}\cdot \vec{B} \right|^2=\left| \vec{A} \right|^2\left| \vec{B} \right|^2
+\]
+
+

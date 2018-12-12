@@ -309,7 +309,7 @@
 \noindent\centering
 \begin{tikzpicture}
 \node [newdefinitionsty] (dbox){\begin{minipage}{0.93\textwidth}\itshape\BODY\end{minipage}};
-\node[newdefinitionstytitle, right=10pt] at (dbox.north west) {\bf\textsf{Definition \stepcounter{Newdefinition}\theNewdefinition\; #1}};
+\node[newdefinitionstytitle, right=10pt] at (dbox.north west) {\bf\textsf{Property \stepcounter{Newdefinition}\theNewdefinition\; #1}};
 \node[newdefinitionstytitle, rounded corners] at (dbox.east) {$\heartsuit$};
 \end{tikzpicture}
 }[\par\vspace{.5\baselineskip}]

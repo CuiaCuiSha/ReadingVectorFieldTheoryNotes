@@ -1,2 +1,9 @@
 \contentsline {chapter}{\numberline {1}写在前面}{3}{chapter.1}
-\contentsline {chapter}{\numberline {2}矢量及矢量分析}{4}{chapter.2}
+\contentsline {chapter}{\numberline {2}矢量}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}title}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}矢量与矩阵}{4}{section.2.2}
+\contentsline {section}{\numberline {2.3}矢量混合积}{4}{section.2.3}
+\contentsline {section}{\numberline {2.4}矢量二重叉积}{5}{section.2.4}
+\contentsline {section}{\numberline {2.5}Laplace公式}{5}{section.2.5}
+\contentsline {section}{\numberline {2.6}Lagrange公式}{5}{section.2.6}
+\contentsline {chapter}{\numberline {A}常见矢量公式}{6}{appendix.A}
