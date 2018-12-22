@@ -1,20 +1,22 @@
 \chapter{矢量}
 
-凡是与三个独立因素有关的物理量均可以采用三维矢量表示。由此物理楼可以分为标量，矢量，二阶张量等。
-在三维空间中，一个二阶张量则有9个分量，可以表示为一个有序9元数组或3×3阶的矩阵
-\section{矢量与矩阵}
+凡是与三个独立因素有关的物理量均可以采用三维矢量表示。由此物理楼可以分为标量，矢量，二阶张量等。在三维空间中，一个二阶张量则有9个分量，可以表示为一个有序9元数组或3×3阶的矩阵
 
+
+\section{矢量与矩阵}
 
 矢量
 \[\overrightarrow{A}=A_x\widehat{i}+A_y\widehat{j}+A_z\widehat{k}\]
 
-对应矩阵
 
+\noindent	对应矩阵
 \[A=\left[ \begin{array}{c}
 A_x\\
 A_y\\
 A_z\\
 \end{array} \right] \]
+
+
 
 \section{矢量混合积}
 表征平行六面体有向体积
@@ -38,26 +40,27 @@ A_z\\
 \end{newdef}
 
 
-
 \section{Laplace公式}
 \[
 \left( \vec{A}\times \vec{B} \right) \cdot \left( \vec{C}\times \vec{D} \right) =\left( \vec{A}\cdot \vec{C} \right) \left( \vec{B}\cdot \vec{D} \right) -\left( \vec{A}\cdot \vec{D} \right) \left( \vec{B}\cdot \vec{C} \right) 
 \]
+
+
 \section{Lagrange公式}
 \[
 \left| \vec{A}\times \vec{B} \right|^2+\left| \vec{A}\cdot \vec{B} \right|^2=\left| \vec{A} \right|^2\left| \vec{B} \right|^2
 \]
+
+
 \section{矢量的除法}
+ 矢量的叉乘无法唯一性定义矢量的除法运算。只有利用“$\cdot$”和“$\times$”同时定义才可以。如下，已知$\vec{a}$,$\vec{d}$和标量$c$，求解$\vec{b}$
 
-矢量的叉乘无法唯一性定义矢量的除法运算。只有利用“$\cdot$”和“$\times$”同时定义才可以。
-
-如下，已知$\vec{a}$,$\vec{d}$和标量$c$，求解$\vec{b}$
-\[
-\begin{cases}
+\begin{equation*}
+\left\{ \begin{array}{c}
 \vec{a}\cdot \vec{b}=c\\
 \vec{a}\times \vec{b}=\vec{d}\\
-\end{cases}
-\]
+\end{array} \right. 
+\end{equation*}
 构造
 \[
 \vec{a}\times \left( \vec{a}\times \vec{b} \right) =\vec{a}\left( \vec{a}\cdot \vec{b} \right) -\vec{b}\left( \vec{a}\cdot \vec{a} \right) 
@@ -69,29 +72,21 @@ A_z\\
 
 
 从矢量除法的定义不难看出，矢量的“$\cdot$”和“$\times$”是相互关联且互为补充的。
-
-这里退化到平面矢量（可作复数的对应），做出讨论。有
+这里退化到平面矢量（ 可作复数的对应），做出讨论。有
 \[
-\vec{a}=a_x\vec{i}+a_y\vec{j}=a_x+\text{i}a_{\begin{array}{c}
-	y\\
-	\end{array}}
-\\
-\vec{b}=b_x\vec{i}+b_y\vec{j}=b_x+\text{i}b_y
+\left\{ \begin{array}{c}
+\vec{a}=a_x\hat{i}+a_y\hat{j}=a_x+ia_y\\
+\vec{b}=b_x\hat{i}+b_y\hat{j}=b_x+ib_y\\
+\end{array} \right. 
 \]
-
 于是有
 \[
-\bar{a}b=\left( \vec{a}\cdot \vec{b} \right) +\text{i}\left\{ \vec{a}\times \vec{b} \right\} 
+\bar{a}b=\left( \vec{a}\cdot \vec{b} \right) +\mathit{i}\left\{ \vec{a}\times \vec{b} \right\} 
 \]
+其中$\bar{a}$表示$a$的共轭复数;$\left\{\right\}$符号表示不计算方向，只计算正负的叉积运算。
 
-其中$\bar{a}$表示$a$的共轭复数;$\left\{\right\}$符号表示不计算方向，只计算正负的叉积运算。易得
-
+\noindent 易得
 \[
-\vec{b}=\frac{\vec{a}\left( \vec{a}\cdot \vec{b} \right) +\text{i}a\left( \vec{a}\times \vec{b} \right)}{\left| \text{a} \right|^2}
+\vec{b}=\frac{\vec{a}\left( \vec{a}\cdot \vec{b} \right) +\mathit{i}a\left( \vec{a}\times \vec{b} \right)}{\left| \mathit{a} \right|^2}
 \]
-
 书中后面讨论的Hamilton算子$\nabla $、散度$\nabla\cdot A$和旋度$\nabla\times\vec{A}$也正好是一对运算。
-
-
-
-
