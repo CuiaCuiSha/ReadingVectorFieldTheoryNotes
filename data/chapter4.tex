@@ -1,0 +1,73 @@
+\chapter{梯度}
+如果说\textbf{等值面}是数量场的宏观特征，那么场的空间变化就是其\textbf{微观特征}。
+\section{$ \hat{l} $的 方向余弦}
+数量场$ u=u\left(x,y,z\right) $的变化空间取一点$ M_0 $，对应$ u_0=u\left(x_0,y_0,z_0\right) $,研究此时场朝$ \hat{l} $方向的变化规律。
+
+任取一段$ \Delta \hat{l} $,写出
+\[ \Delta \hat{l}=\Delta x\hat{i}+\Delta y\hat{j}+\Delta z\hat{k} \]
+式中$ \Delta x $，$ \Delta y $，$ \Delta z $表示$ \Delta \hat{l} $在$ x$，$y$，$z $轴的投影,则可知这一方向的单位矢是
+\[\hat{l}=\left( \frac{\Delta x}{\Delta l} \right) \hat{i} +\left( \frac{\Delta y}{\Delta l} \right) \hat{j}+\left( \frac{\Delta z}{\Delta l} \right) \hat{k} \]
+则矢量$ \Delta \hat{l} $的长度（或模），具体有，
+\[ \Delta l=\sqrt{\left( \Delta x \right) ^2+\left( \Delta y \right) ^2+\left( \Delta z \right) ^2} \]
+定义
+\[
+\cos \alpha =\frac{\Delta x}{\Delta l}\text{，}\cos \beta =\frac{\Delta y}{\Delta l},\cos \gamma =\frac{\Delta z}{\Delta l}
+\]
+分别表示单位矢$ \hat{l} $在$ x$，$y$，$z $轴的方向余弦，最后得到
+\[
+\hat{l}=\cos \alpha \hat{i}+\cos \beta \hat{j}+\cos \gamma \hat{k}
+\]
+且满足等式
+\[
+\cos ^2\alpha +\cos ^2\beta +\cos ^2\gamma =1
+\]
+
+\section{方向导数$ \frac{\partial u}{\partial l} $}
+数量场$ u=u\left(x,y,z\right) $在$ M_0\left(x_0,y_0,z_0\right) $处可微，则$ u $在$ M_0 $处沿$ \hat{l} $的方向导数必定存在，且有
+\[
+\left. \frac{\partial u}{\partial l} \right|_{M_0}=\frac{\partial u}{\partial x}\cos \alpha +\frac{\partial u}{\partial y}\cos \beta +\frac{\partial u}{\partial z}\cos \gamma 
+\]
+
+\section{梯度}
+重新观察上式，且将他写成两个矢量函数的\textbf{点积形式}，即
+\begin{equation*}
+\begin{aligned}
+\left. \frac{\partial u}{\partial l} \right|_{M_0}&=\frac{\partial u}{\partial x}\cos \alpha +\frac{\partial u}{\partial y}\cos \beta +\frac{\partial u}{\partial z}\cos \gamma 
+\\
+&=\left( \frac{\partial u}{\partial x}\hat{i}+\frac{\partial u}{\partial y}\hat{j}+\frac{\partial u}{\partial z}\hat{k} \right) \cdot \left( \cos \alpha \hat{i}+\cos \beta \hat{j}+\cos \gamma \hat{k} \right) 
+\\
+&=\left( \frac{\partial u}{\partial x}\hat{i}+\frac{\partial u}{\partial y}\hat{j}+\frac{\partial u}{\partial z}\hat{k} \right) \cdot \hat{l}
+\end{aligned}
+\end{equation*}
+上式清楚的表明：数量场的方向导数由两部分组成：一个是方向单位矢，一个是数量场的导数矢$ \frac{\partial u}{\partial x}\hat{i}+\frac{\partial u}{\partial y}\hat{j}+\frac{\partial u}{\partial z}\hat{k}   $如果考虑\ref{chapter3_3}所引入的Hamilton矢量算子$ \nabla $,
+\[
+\nabla=\hat{i}\frac{\partial}{\partial x}
++\hat{j}\frac{\partial}{\partial y}
++\hat{k}\frac{\partial}{\partial z}
+\]
+即可写出
+\[
+\nabla u=  \left(  \hat{i}\frac{\partial}{\partial x}
++\hat{j}\frac{\partial}{\partial y}
++\hat{k}\frac{\partial}{\partial z}
+ \right) u 
+ \]
+ 于是有
+\[
+\frac{\partial u}{\partial l}=\left( \nabla u \right) \cdot \hat{l}
+\]
+
+定义数量场$ u\left(x,y,z\right) $在点$ M_0 $处的梯度为
+\[
+\nabla u=\frac{\partial u}{\partial x}\hat{i}+\frac{\partial u}{\partial y}\hat{j}+\frac{\partial u}{\partial z}\hat{k}
+\]
+
+\begin{newdef}[]
+	梯度是一个矢量，且是数量场$ u\left(x,y,z\right) $在$ M_0 $处的\textbf{固有属性}，与方向$ \hat{l} $无关。
+
+\end{newdef}
+
+
+
+
+
