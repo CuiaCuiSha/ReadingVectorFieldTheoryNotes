@@ -1,0 +1,24 @@
+\contentsline {chapter}{写在前面}{3}{chapter*.2}
+\contentsline {chapter}{\numberline {1}矢量}{4}{chapter.1}
+\contentsline {section}{\numberline {1.1}矢量与矩阵}{4}{section.1.1}
+\contentsline {section}{\numberline {1.2}矢量混合积}{4}{section.1.2}
+\contentsline {section}{\numberline {1.3}矢量二重叉积}{5}{section.1.3}
+\contentsline {section}{\numberline {1.4}Laplace公式}{5}{section.1.4}
+\contentsline {section}{\numberline {1.5}Lagrange公式}{5}{section.1.5}
+\contentsline {section}{\numberline {1.6}矢量的除法}{5}{section.1.6}
+\contentsline {chapter}{\numberline {2}矢量分析}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}标量函数和矢量函数}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}矢量函数的导数和微分}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}矢量导数的应用}{8}{section.2.3}
+\contentsline {section}{\numberline {2.4}矢量函数的积分}{8}{section.2.4}
+\contentsline {chapter}{\numberline {3}场}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}数量场}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}矢量场}{9}{section.3.2}
+\contentsline {section}{\numberline {3.3}Hamilton算子}{10}{section.3.3}
+\contentsline {section}{\numberline {3.4}坐标单位矢}{10}{section.3.4}
+\contentsline {chapter}{\numberline {4}梯度}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}$ \mathaccentV {hat}05E{l} $的 方向余弦}{12}{section.4.1}
+\contentsline {section}{\numberline {4.2}方向导数$ \frac {\partial u}{\partial l} $}{13}{section.4.2}
+\contentsline {section}{\numberline {4.3}梯度}{13}{section.4.3}
+\contentsline {section}{\numberline {4.4}最速下降法}{14}{section.4.4}
+\contentsline {chapter}{\numberline {A}常见矢量公式}{15}{appendix.A}

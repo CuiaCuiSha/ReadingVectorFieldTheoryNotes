@@ -1,0 +1,145 @@
+<h1 id="写在前面" class="unnumbered">写在前面</h1>
+<p>一直以来都想要好好的完善一下自己的数理知识，同时也愉快的使用一次LaTeX，经过了之前写matlab的使用熟悉了GitHub。终于下定决心LaTeX和GitHub结合一下，用这种方式记录下自己的第一个电子版的读书笔记。（嗯。其实手写的读书笔记也没有）</p>
+<p>LaTeX的模板取自于Elegant Note模板，得到的作者的唯一联系方式是他的邮箱 <a href="ddswhu@gmail.com ">ddswhu@gmail.com </a>特此感谢。</p>
+<p>《矢算场论札记》梁昌洪著，书和“大佬”借的。选择这本书作为自己的一个开始，一个原因是学科需要，另一也是对梁老师有特殊的好感。有好感的原因呢，一是因为我女朋友也在西电，另一个则是因为梁昌洪老师的《简明微波》一书。</p>
+<p>2018年12月09日下载模板，2018年12月10日，正式开始这个笔记的记录，不知道多年之后的自己看见了，会是什么感觉。</p>
+<h1 id="矢量">矢量</h1>
+<p>凡是与三个独立因素有关的物理量均可以采用三维矢量表示。由此物理楼可以分为标量，矢量，二阶张量等。在三维空间中，一个二阶张量则有9个分量，可以表示为一个有序9元数组或3×3阶的矩阵</p>
+<h2 id="矢量与矩阵">矢量与矩阵</h2>
+<p>矢量 <br /><span class="math display"><em>A⃗</em> = <em>A</em><sub><em>x</em></sub><em>î</em> + <em>A</em><sub><em>y</em></sub><em>ĵ</em> + <em>A</em><sub><em>z</em></sub><em>k̂</em></span><br /></p>
+<p>对应矩阵 <br /><span class="math display">$$A=\left[ \begin{array}{c}
+A_x\\
+A_y\\
+A_z\\
+\end{array} \right]$$</span><br /></p>
+<h2 id="矢量混合积">矢量混合积</h2>
+<p>表征平行六面体有向体积 <br /><span class="math display"><em>A⃗</em> ⋅ (<em>B⃗</em>×<em>C⃗</em>) = <em>B⃗</em> ⋅ (<em>C⃗</em>×<em>A⃗</em>) = <em>C⃗</em></span><br /></p>
+<p>三个非零矢量混合积为0的充要条件是<span class="math inline"><em>A⃗</em>, <em>B⃗</em>, <em>C⃗</em></span>三个矢量共面，对应有向体积为0。</p>
+<h2 id="矢量二重叉积">矢量二重叉积</h2>
+<p><br /><span class="math display"><em>A⃗</em> × (<em>B⃗</em>×<em>C⃗</em>) = <em>B⃗</em>(<em>A⃗</em>⋅<em>C⃗</em>) − <em>C⃗</em>(<em>A⃗</em>⋅<em>B⃗</em>)</span><br /></p>
+<p>三个非零矢量混合积为0的充要条件是<span class="math inline"><em>A⃗</em>, <em>B⃗</em>, <em>C⃗</em></span>三个矢量共面，对应有向体积为0。</p>
+<h2 id="laplace公式">Laplace公式</h2>
+<p><br /><span class="math display">(<em>A⃗</em>×<em>B⃗</em>) ⋅ (<em>C⃗</em>×<em>D⃗</em>) = (<em>A⃗</em>⋅<em>C⃗</em>)(<em>B⃗</em>⋅<em>D⃗</em>) − (<em>A⃗</em>⋅<em>D⃗</em>)(<em>B⃗</em>⋅<em>C⃗</em>)</span><br /></p>
+<h2 id="lagrange公式">Lagrange公式</h2>
+<p><br /><span class="math display">|<em>A⃗</em>×<em>B⃗</em>|<sup>2</sup> + |<em>A⃗</em>⋅<em>B⃗</em>|<sup>2</sup> = |<em>A⃗</em>|<sup>2</sup>|<em>B⃗</em>|<sup>2</sup></span><br /></p>
+<h2 id="矢量的除法">矢量的除法</h2>
+<p>矢量的叉乘无法唯一性定义矢量的除法运算。只有利用“<span class="math inline">⋅</span>”和“<span class="math inline">×</span>”同时定义才可以。如下，已知<span class="math inline"><em>a⃗</em></span>,<span class="math inline"><em>d⃗</em></span>和标量<span class="math inline"><em>c</em></span>，求解<span class="math inline"><em>b⃗</em></span></p>
+<p><br /><span class="math display">$$\left\{ \begin{array}{c}
+\vec{a}\cdot \vec{b}=c\\
+\vec{a}\times \vec{b}=\vec{d}\\
+\end{array} \right.$$</span><br /> 构造 <br /><span class="math display"><em>a⃗</em> × (<em>a⃗</em>×<em>b⃗</em>) = <em>a⃗</em>(<em>a⃗</em>⋅<em>b⃗</em>) − <em>b⃗</em>(<em>a⃗</em>⋅<em>a⃗</em>)</span><br /> 易得 <br /><span class="math display">$$\vec{b}=\frac{\vec{a}\left( \vec{a}\cdot \vec{b} \right) -\vec{a}\times \left( \vec{a}\times \vec{b} \right)}{\left( \vec{a}\cdot \vec{a} \right)}=\frac{\vec{a}c-\vec{a}\times \vec{d}}{\left( \vec{a}\cdot \vec{a} \right)}$$</span><br /></p>
+<p>从矢量除法的定义不难看出，矢量的“<span class="math inline">⋅</span>”和“<span class="math inline">×</span>”是相互关联且互为补充的。 这里退化到平面矢量（ 可作复数的对应），做出讨论。有 <br /><span class="math display">$$\left\{ \begin{array}{c}
+\vec{a}=a_x\hat{i}+a_y\hat{j}=a_x+ia_y\\
+\vec{b}=b_x\hat{i}+b_y\hat{j}=b_x+ib_y\\
+\end{array} \right.$$</span><br /> 于是有 <br /><span class="math display"><em>ā</em><em>b</em> = (<em>a⃗</em>⋅<em>b⃗</em>) + <em>i</em>{<em>a⃗</em>×<em>b⃗</em>}</span><br /> 其中<span class="math inline"><em>ā</em></span>表示<span class="math inline"><em>a</em></span>的共轭复数;<span class="math inline">{}</span>符号表示不计算方向，只计算正负的叉积运算。</p>
+<p>易得 <br /><span class="math display">$$\vec{b}=\frac{\vec{a}\left( \vec{a}\cdot \vec{b} \right) +\mathit{i}a\left( \vec{a}\times \vec{b} \right)}{\left| \mathit{a} \right|^2}$$</span><br /> 书中后面讨论的Hamilton算子<span class="math inline">∇</span>、散度<span class="math inline">∇ ⋅ <em>A</em></span>和旋度<span class="math inline">∇ × <em>A⃗</em></span>也正好是一对运算。</p>
+<h1 id="矢量分析">矢量分析</h1>
+<h2 id="标量函数和矢量函数">标量函数和矢量函数</h2>
+<p>对于标量函数，标量<em>u</em>随着参量<em>t</em>的变化而变化,即 <br /><span class="math display"><em>u</em> = <em>u</em>(<em>t</em>)</span><br /> 对于矢量<span class="math inline"><em>A⃗</em></span>随参数t变化，即 <br /><span class="math display"><em>A⃗</em> = <em>A⃗</em>(<em>t</em>)</span><br /> 则称<span class="math inline"><em>A⃗</em></span>为矢量函数。分量形式的表示为 <br /><span class="math display"><em>A⃗</em>(<em>t</em>) = <em>A</em><sub><em>x</em></sub>(<em>t</em>)<em>î</em> + <em>A</em><sub><em>y</em></sub>(<em>t</em>)<em>ĵ</em> + <em>A</em><sub><em>z</em></sub>(<em>t</em>)<em>k̂</em></span><br /></p>
+<p>一个矢量函数<span class="math inline"><em>A⃗</em>(<em>t</em>)</span>实际上是由三个<strong>独立</strong>有序的数量函数<span class="math inline"><em>A</em><sub><em>x</em></sub>(<em>t</em>)</span>,<span class="math inline"><em>A</em><sub><em>y</em></sub>(<em>t</em>)</span>和<span class="math inline"><em>A</em><sub><em>y</em></sub>(<em>t</em>)</span>结合而成的。</p>
+<p>这一点和复解析函数不同，复解析函数<span class="math inline"><em>w</em> = <em>u</em> + <em>i</em><em>v</em></span>也是由两个二元实函数结合而成，但<em>u，v</em>之间并不独立，收到Cauchy-Riemann条件约束。</p>
+<h2 id="矢量函数的导数和微分">矢量函数的导数和微分</h2>
+<p>矢量函数的倒数是一个矢量，它是矢端曲线的切线，并<strong>始终</strong>指向对应<em>t</em>增大的方向。</p>
+<h2 id="矢量导数的应用">矢量导数的应用</h2>
+<h2 id="矢量函数的积分">矢量函数的积分</h2>
+<p>对于一个矢量表示成下面的形式 <br /><span class="math display"><em>A⃗</em>(<em>t</em>) = <em>A</em><sub><em>x</em></sub>(<em>t</em>)<em>î</em> + <em>A</em><sub><em>y</em></sub>(<em>t</em>)<em>ĵ</em> + <em>A</em><sub><em>z</em></sub>(<em>t</em>)<em>k̂</em></span><br /> 则矢量函数的不定积分有 <br /><span class="math display">∫<em>A⃗</em>(<em>t</em>)  <em>d</em><em>t</em> = <em>î</em>∫<em>A</em><sub><em>x</em></sub>(<em>t</em>)  <em>d</em><em>t</em> + <em>ĵ</em>∫<em>A</em><sub><em>y</em></sub>(<em>t</em>)  <em>d</em><em>t</em> + <em>k̂</em>∫<em>A</em><sub><em>z</em></sub>(<em>t</em>)  <em>d</em><em>t</em></span><br /></p>
+<p>矢量函数的积分实质上是三个<strong>独立有序</strong>的数量函数的不定积分。</p>
+<table>
+<caption>矢量函数的基本性质</caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">∫<em>k</em><em>A⃗</em>(<em>t</em>)  <em>d</em><em>t</em> = <em>k</em>∫<em>A⃗</em>(<em>t</em>)  <em>d</em><em>t</em></span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">∫[<em>A⃗</em>(<em>t</em>)±<em>B⃗</em>(<em>t</em>)]  <em>d</em><em>t</em> = ∫<em>A⃗</em>(<em>t</em>)  <em>d</em><em>t</em> ± ∫<em>B⃗</em>(<em>t</em>)  <em>d</em><em>t</em></span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">∫<em>a⃗</em><em>u</em>(<em>t</em>)  <em>d</em><em>t</em> = <em>a⃗</em>∫<em>u</em>(<em>t</em>)  <em>d</em><em>t</em></span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">∫<em>a⃗</em> ⋅ <em>A⃗</em>(<em>t</em>)  <em>d</em><em>t</em> = <em>a⃗</em> ⋅ ∫<em>A⃗</em>(<em>t</em>)  <em>d</em><em>t</em></span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">∫<em>a⃗</em> × <em>A⃗</em>(<em>t</em>)  <em>d</em><em>t</em> = <em>a⃗</em> × ∫<em>A⃗</em>(<em>t</em>)  <em>d</em><em>t</em></span></td>
+</tr>
+</tbody>
+</table>
+<h1 id="场">场</h1>
+<p>场是物理量的<strong>空间函数</strong>，<strong>时间函数</strong>。根据物理量的性质，场可以分为数量场，矢量场，张量场。</p>
+<p>场有两个显著的特点：</p>
+<p>场是物理的客观存在，不以坐标系选取而变化。</p>
+<p>场随时间空间联合变化，本章讨论的是不随时间变化的稳定场论。</p>
+<h2 id="数量场">数量场</h2>
+<p>数量函数<em>u</em>是点<em>M</em>的函数<span class="math inline"><em>u</em> = <em>u</em>(<em>m</em>)</span>。进一步写成<br /><span class="math display"><em>u</em> = <em>u</em>(<em>x</em>, <em>y</em>, <em>z</em>)</span><br /></p>
+<p>重要的宏观特征：<strong>等值面</strong>。</p>
+<h2 id="矢量场">矢量场</h2>
+<p>如果空间中任意点<em>M</em>对应一矢量函数 <br /><span class="math display"><em>A⃗</em> = <em>A⃗</em>(<em>M</em>)</span><br /> 则称<span class="math inline"><em>A⃗</em></span>是此空间的一个矢量场，对于一个直角坐标系，有 <br /><span class="math display"><em>A⃗</em> = <em>A⃗</em>(<em>x</em>,<em>y</em>,<em>z</em>)</span><br /></p>
+<p>重要的宏观特征：<strong>矢量线</strong>，简称矢线。例如Faraday磁力线。</p>
+<h2 id="chapter3_3">Hamilton算子</h2>
+<p>场的空间变化确定其细微的特征。它的研究方法是考虑场的空间微分和导数，并给出相应分析。为此在三维情况引入 <br /><span class="math display">$$\nabla=\hat{i}\frac{\partial}{\partial x}
+		+\hat{j}\frac{\partial}{\partial y}
+		+\hat{k}\frac{\partial}{\partial z}$$</span><br /> 表示场与空间相互作用的Hamilton矢量算子。</p>
+<p><span class="math inline">∇</span>表示一个运算符号，本身缺乏独立的意义。和场结合才有作用。</p>
+<p><span class="math inline">∇</span>算子具有矢量和运算的双重特性，这是认识算子的一个极为重要的概念。</p>
+<p><span class="math inline"><em>q</em><sub>1</sub></span>，<span class="math inline"><em>q</em><sub>2</sub></span>和<span class="math inline"><em>q</em><sub>3</sub></span>表示独立的正交坐标，<span class="math inline"><em>ê</em><sub>1</sub></span>，<span class="math inline"><em>ê</em><sub>2</sub></span>和<span class="math inline"><em>ê</em><sub>3</sub></span>则表示其相应的单位切向矢。广义正交曲线坐标的<span class="math inline">∇</span>算子的一般形式为，</p>
+<p><br /><span class="math display">$$\nabla =\hat{e}_1\frac{1}{H_1}\frac{\partial}{\partial q_1}+\hat{e}_2\frac{1}{H_2}\frac{\partial}{\partial q_2}+\hat{e}_3\frac{1}{H_3}\frac{\partial}{\partial q_3}$$</span><br /> 式中，<span class="math inline"><em>H</em><sub>1</sub></span>，<span class="math inline"><em>H</em><sub>2</sub></span>和<span class="math inline"><em>H</em><sub>3</sub></span>为Lam<span class="math inline">$\grave{\text{e}}$</span> 系数。</p>
+<p><span>2.5</span></p>
+<table>
+<caption>description</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;">坐标系</th>
+<th style="text-align: center;"><span class="math inline"><em>q</em><sub>1</sub></span> <span class="math inline"><em>q</em><sub>2</sub></span>  <span class="math inline"><em>q</em><sub>3</sub></span></th>
+<th style="text-align: center;"><span class="math inline"><em>H</em><sub>1</sub></span> <span class="math inline"><em>H</em><sub>2</sub></span> <span class="math inline"><em>H</em><sub>3</sub></span></th>
+<th style="text-align: center;"><span class="math inline">∇</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">直角坐标系</td>
+<td style="text-align: center;"><em>x y z</em></td>
+<td style="text-align: center;">1 1 1</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">圆柱坐标系</td>
+<td style="text-align: center;"><span class="math inline"><em>ρ</em></span> <span class="math inline"><em>ϕ</em></span> <span class="math inline"><em>z</em></span></td>
+<td style="text-align: center;">1 <span class="math inline"><em>ρ</em></span> 1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">球坐标系</td>
+<td style="text-align: center;"><span class="math inline"><em>r</em></span> <span class="math inline"><em>θ</em></span> <span class="math inline"><em>ϕ</em></span></td>
+<td style="text-align: center;">1 <span class="math inline"><em>r</em></span> <span class="math inline"><em>r</em>sin <em>θ</em></span></td>
+<td style="text-align: center;">17</td>
+</tr>
+</tbody>
+</table>
+<h2 id="坐标单位矢">坐标单位矢</h2>
+<p>同一矢量场在不同的坐标系下有不同的表象和形式。</p>
+<p>必须强调指出，三种坐标系中，只有直角坐标系的<span class="math inline"><em>î</em></span>，<span class="math inline"><em>ĵ</em></span>，<span class="math inline"><em>k̂</em></span>和圆柱坐标系的<span class="math inline"><em>ê</em><sub><em>z</em></sub></span>是不变单位矢，其他的各种单位矢，例如<span class="math inline"><em>ê</em><sub><em>ρ</em></sub></span> ,<span class="math inline"><em>ê</em><sub><em>ϕ</em></sub></span>;<span class="math inline"><em>ê</em><sub><em>r</em></sub></span>，<span class="math inline"><em>ê</em><sub><em>ϕ</em></sub></span>,<span class="math inline"><em>ê</em><sub><em>θ</em></sub></span>均为<strong>变单位矢</strong>。换句话说，方向是时刻在变化的。<strong>因此必须参与微分和积分</strong>。</p>
+<h1 id="梯度">梯度</h1>
+<p>如果说<strong>等值面</strong>是数量场的宏观特征，那么场的空间变化就是其<strong>微观特征</strong>。</p>
+<h2 id="hatl的-方向余弦"><span class="math inline"><em>l̂</em></span>的 方向余弦</h2>
+<p>数量场<span class="math inline"><em>u</em> = <em>u</em>(<em>x</em>,<em>y</em>,<em>z</em>)</span>的变化空间取一点<span class="math inline"><em>M</em><sub>0</sub></span>，对应<span class="math inline"><em>u</em><sub>0</sub> = <em>u</em>(<em>x</em><sub>0</sub>,<em>y</em><sub>0</sub>,<em>z</em><sub>0</sub>)</span>,研究此时场朝<span class="math inline"><em>l̂</em></span>方向的变化规律。</p>
+<p>任取一段<span class="math inline"><em>Δ</em><em>l̂</em></span>,写出 <br /><span class="math display"><em>Δ</em><em>l̂</em> = <em>Δ</em><em>x</em><em>î</em> + <em>Δ</em><em>y</em><em>ĵ</em> + <em>Δ</em><em>z</em><em>k̂</em></span><br /> 式中<span class="math inline"><em>Δ</em><em>x</em></span>，<span class="math inline"><em>Δ</em><em>y</em></span>，<span class="math inline"><em>Δ</em><em>z</em></span>表示<span class="math inline"><em>Δ</em><em>l̂</em></span>在<span class="math inline"><em>x</em></span>，<span class="math inline"><em>y</em></span>，<span class="math inline"><em>z</em></span>轴的投影,则可知这一方向的单位矢是 <br /><span class="math display">$$\hat{l}=\left( \frac{\Delta x}{\Delta l} \right) \hat{i} +\left( \frac{\Delta y}{\Delta l} \right) \hat{j}+\left( \frac{\Delta z}{\Delta l} \right) \hat{k}$$</span><br /> 则矢量<span class="math inline"><em>Δ</em><em>l̂</em></span>的长度（或模），具体有， <br /><span class="math display">$$\Delta l=\sqrt{\left( \Delta x \right) ^2+\left( \Delta y \right) ^2+\left( \Delta z \right) ^2}$$</span><br /> 定义 <br /><span class="math display">$$\cos \alpha =\frac{\Delta x}{\Delta l}\text{，}\cos \beta =\frac{\Delta y}{\Delta l},\cos \gamma =\frac{\Delta z}{\Delta l}$$</span><br /> 分别表示单位矢<span class="math inline"><em>l̂</em></span>在<span class="math inline"><em>x</em></span>，<span class="math inline"><em>y</em></span>，<span class="math inline"><em>z</em></span>轴的方向余弦，最后得到 <br /><span class="math display"><em>l̂</em> = cos <em>α</em><em>î</em> + cos <em>β</em><em>ĵ</em> + cos <em>γ</em><em>k̂</em></span><br /> 且满足等式 <br /><span class="math display">cos<sup>2</sup><em>α</em> + cos<sup>2</sup><em>β</em> + cos<sup>2</sup><em>γ</em> = 1</span><br /></p>
+<h2 id="方向导数fracpartial-upartial-l">方向导数<span class="math inline">$\frac{\partial u}{\partial l}$</span></h2>
+<p>数量场<span class="math inline"><em>u</em> = <em>u</em>(<em>x</em>,<em>y</em>,<em>z</em>)</span>在<span class="math inline"><em>M</em><sub>0</sub>(<em>x</em><sub>0</sub>,<em>y</em><sub>0</sub>,<em>z</em><sub>0</sub>)</span>处可微，则<span class="math inline"><em>u</em></span>在<span class="math inline"><em>M</em><sub>0</sub></span>处沿<span class="math inline"><em>l̂</em></span>的方向导数必定存在，且有 <br /><span class="math display">$$\left. \frac{\partial u}{\partial l} \right|_{M_0}=\frac{\partial u}{\partial x}\cos \alpha +\frac{\partial u}{\partial y}\cos \beta +\frac{\partial u}{\partial z}\cos \gamma$$</span><br /></p>
+<h2 id="梯度-1">梯度</h2>
+<p>重新观察上式，且将他写成两个矢量函数的<strong>点积形式</strong>，即 <br /><span class="math display">$$\begin{aligned}
+\left. \frac{\partial u}{\partial l} \right|_{M_0}&amp;=\frac{\partial u}{\partial x}\cos \alpha +\frac{\partial u}{\partial y}\cos \beta +\frac{\partial u}{\partial z}\cos \gamma 
+\\
+&amp;=\left( \frac{\partial u}{\partial x}\hat{i}+\frac{\partial u}{\partial y}\hat{j}+\frac{\partial u}{\partial z}\hat{k} \right) \cdot \left( \cos \alpha \hat{i}+\cos \beta \hat{j}+\cos \gamma \hat{k} \right) 
+\\
+&amp;=\left( \frac{\partial u}{\partial x}\hat{i}+\frac{\partial u}{\partial y}\hat{j}+\frac{\partial u}{\partial z}\hat{k} \right) \cdot \hat{l}
+\end{aligned}$$</span><br /> 上式清楚的表明：数量场的方向导数由两部分组成：一个是方向单位矢，一个是数量场的导数矢<span class="math inline">$\frac{\partial u}{\partial x}\hat{i}+\frac{\partial u}{\partial y}\hat{j}+\frac{\partial u}{\partial z}\hat{k}$</span>如果考虑<a href="#chapter3_3" data-reference-type="ref" data-reference="chapter3_3">3.3</a>所引入的Hamilton矢量算子<span class="math inline">∇</span>, <br /><span class="math display">$$\nabla=\hat{i}\frac{\partial}{\partial x}
++\hat{j}\frac{\partial}{\partial y}
++\hat{k}\frac{\partial}{\partial z}$$</span><br /> 即可写出 <br /><span class="math display">$$\nabla u=  \left(  \hat{i}\frac{\partial}{\partial x}
++\hat{j}\frac{\partial}{\partial y}
++\hat{k}\frac{\partial}{\partial z}
+ \right) u$$</span><br /> 于是有 <br /><span class="math display">$$\frac{\partial u}{\partial l}=\left( \nabla u \right) \cdot \hat{l}$$</span><br /></p>
+<p>定义数量场<span class="math inline"><em>u</em>(<em>x</em>,<em>y</em>,<em>z</em>)</span>在点<span class="math inline"><em>M</em><sub>0</sub></span>处的梯度为 <br /><span class="math display">$$\nabla u=\frac{\partial u}{\partial x}\hat{i}+\frac{\partial u}{\partial y}\hat{j}+\frac{\partial u}{\partial z}\hat{k}$$</span><br /></p>
+<p>梯度是一个矢量，且是数量场<span class="math inline"><em>u</em>(<em>x</em>,<em>y</em>,<em>z</em>)</span>在<span class="math inline"><em>M</em><sub>0</sub></span>处的<strong>固有属性</strong>，与方向<span class="math inline"><em>l̂</em></span>无关。</p>
+<h1 id="常见矢量公式">常见矢量公式</h1>
+<p>矢量混合积 <br /><span class="math display"><em>A⃗</em> ⋅ (<em>B⃗</em>×<em>C⃗</em>) = <em>B⃗</em> ⋅ (<em>C⃗</em>×<em>A⃗</em>) = <em>C⃗</em></span><br /></p>
+<p>矢量二重叉积 <br /><span class="math display"><em>A⃗</em> × (<em>B⃗</em>×<em>C⃗</em>) = <em>B⃗</em>(<em>A⃗</em>⋅<em>C⃗</em>) − <em>C⃗</em>(<em>A⃗</em>⋅<em>B⃗</em>)</span><br /></p>

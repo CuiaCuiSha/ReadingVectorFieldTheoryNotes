@@ -1,0 +1,44 @@
+\chapter{曲线和曲面积分}\label{chapter_5}
+物体在场中运动，必然会与场发生相互作用，曲线曲面积分正式反映这种作用的积累和总量。
+\section{曲线积分}
+\subsection{弧长的曲线积分}
+质点在数量场中做曲线运动，构成对弧长的曲线积分。
+
+可分为二维弧长曲线积分，三维弧长曲线积分
+这里讨论$ W=\int_{L} u(x,y) \mathrm{d}l$的计算方法。在曲线$ L $上有$ y $和$ x $的关系
+\[
+y=f(x)	(x_1\leq x\leq x_2)
+\]
+则可知弧长
+\[
+\mathrm{d}l=\sqrt{(\mathrm{d}x)^2+(\mathrm{d}y)^2}=\sqrt{1+\frac{\mathrm{d}y}{\mathrm{d}x}^2}\mathrm{d}x
+\]
+于是可以写出
+\[
+\int_{L} u(x,y) \mathrm{d}l=\int_{x_1}^{x_2}u[x,f(x)]\sqrt{1+\frac{\mathrm{d}y}{\mathrm{d}x}^2}\mathrm{d}x
+\]
+%
+\subsection{坐标的曲线积分}
+坐标的曲线积分主要是针对矢量场，典型场景位一个质点，在力场$ \vec{A} $的作用线沿曲线$ L $ 从$ M $运动到$ N $，则$ \vec{A} $所做的功$ W $可以表示为
+\[ W=\int_{\vec{L}} \vec{A}\cdot d\vec{l}
+ \]
+矢量场
+\[
+\vec{A}=\vec{A}(x,y,z)=A_x\hat{i}+A_y\hat{j}+A_z\hat{k}
+\]
+和
+\[
+\mathrm{d}\vec{l}=\mathrm{d}_x\hat{i}+\mathrm{d}_y\hat{j}+\mathrm{d}_z\hat{k}
+\]
+则公式可重写为
+\[ 
+W=\int_{\vec{L}} \vec{A}\cdot d\vec{l}=\int_{\vec{L}}A_x\mathrm{d}x+A_y\mathrm{d}y+A_z\mathrm{d}z
+\]
+
+\subsection{两种曲线积分之间的关系}
+
+
+\section{曲面积分}
+与曲线积分对应，存在这面积曲面积分，坐标曲面积分，且两者有密切关系。
+笔记过于复杂，具体内容可参考高等数学或原书。
+
